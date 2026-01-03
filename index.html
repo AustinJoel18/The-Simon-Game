@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Simon Game</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Almendra:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <h1 id="level-title">Simon Game - Press any key to start</h1>
+  <div class="container">
+    <button type="submit" class="instruction-btn" onclick="openPopup()">Instructions</button>
+    <div class="popup" id="popup">
+      <img src="./question-mark.png" />
+        <h2>Game Instructions</h2>
+        <p><ul>
+          <li>Watch the color sequence and repeat it in the same order.</li>
+          <li>Each level adds one new color.</li>
+          <li>Press a wrong button and the game ends.</li>
+          <li>Press any key to restart.</li>
+        </ul></p>
+        <button type="submit" onclick="closePopup()">Got it!</button>
+    </div>
+    <div lass="row">
+      <div type="button" id="green" class="btn green">
+      </div>
+
+      <div type="button" id="red" class="btn red">
+
+      </div>
+    </div>
+
+    <div class="row">
+
+      <div type="button" id="yellow" class="btn yellow">
+
+      </div>
+      <div type="button" id="blue" class="btn blue">
+
+      </div>
+
+    </div>
+
+  </div>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js">
+  </script>
+  <script src="game.js" charset="utf-8"></script>
+</body>
+
+</html>
